@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio website </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<style>
+			@font-face { 
+				font-family: 'uwemski';
+				src: url(karla/rubik/rubik-black-webfont.woff2);
+			}
+		
+		
+			* { 
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			
+			}
+			
+			body { padding: 10px;}
+			div { 
+				min-height: 100px;}
+			
+			header, section, footer {
+				padding: 20px;
+				margin-bottom: 20px;
+				min-height: 100px;
+				background-color: #C4D2DE;
+			}
+		
+			.header { 
+				background-image: url('startingpoint.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 65vh;
+				padding: 10px;
+				/*display: flex;
+				flex-direction: column;*/
+			}
+			
+			.nav {  float: right;margin: 8px;}
+			
+			a { text-decoration: none; text-transform: uppercase; padding: 10px 20px; background-color: #cad7df; color: black; border-radius: 10px;}
+			
+			.child2 { text-align: center;}
+			.child2 h1 { margin: 9px 0px; text-transform: uppercase;}
+			
+			.aboutme { 
+				min-height: 250px;
+				padding: 10px;
+				display: flex;
+				gap: 1rem;
+				clear: both;
+				border: 2px solid black
+			} 
+			
+			.me { width: 350px; border-radius: 30%;  }
+			.values { flex-grow: 1; display: flex; flex-direction: row; gap: 10px;flex-wrap: wrap;}
+			.values div { padding: 5px; width: 45%; margin: 10px;}
+			.aboutme p { }
+			
+			.projects-container { 
+				min-height: 300px;
+				width: 100%;
+				padding: 20px;
+				display: flex;
+				gap: 3rem;
+				flex-wrap: wrap;
+			}
+
+			.values div, .box {
+				border: 1px solid #ccc; /* Add a border to individual boxes */
+				border-radius: 5px; 
+				padding: 10px; 
+				background-color: #ffffff; 
+			}
+			
+			.box { width: 30%; minheight: 30vh; padding: 5px;}
+			.box img { max-width: 40%; float: left;}
+			button { display: inline-block; clear: both; padding: 8px 25px;}
+			.reviews { min-heigth: 300px;}
+			
+			.contact {
+				padding: 20px;
+				border: 2px solid black;
+				max-width: 500px;
+				margin: 0 auto;
+			}
+
+			.contact h2 {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.contact form {
+				display: flex;
+				flex-direction: column;
+			}
+			.contact input[type="submit"] {
+				background-color: #4CAF50;
+				color: white;
+			}
+			
+			
+			@media all and (max-width: 480px)  { 
+			
+				.header { flex-direction: column;}
+				.aboutme { flex-direction: column;}
+			
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<header class="header">
+				<div class="headerchild child1">
+					<a href="#" class="nav">Home &darr;</a>
+					<a href="#" class="nav">Portfolio &darr;</a>
+					<a href="#" class="nav">Contact me &darr;</a>
+					<a href="#" class="nav">About &darr;</a>
+				</div>
+				
+				<div class="headerchild child2" >
+					<h1>Let's do great things together!</i></h1>
+					<a href="#">portfolio</a>
+				</div>
+			
+			</header>
+			<section class="aboutme">
+				<h2>About me</h2>
+				<div>
+					<img src="director.jpeg" class="me"></img>
+				</div>
+				<div class='values'>
+					<div>
+						<h3>Patience</h3>
+						<p>In a fast-paced world, I believe patience is key to achieving long-term success. It allows me to stay calm under pressure and approach challenges with a thoughtful and strategic mindset.</p>
+					</div>
+					<div>
+						<h3>Grit</h3>
+						<p>Grit is the drive that pushes me forward, even when the path gets tough. I remain committed to my goals and strive to overcome obstacles with determination and resilience.</p>
+					
+					</div>
+					<div>
+						<h3>Tenacity</h3>
+						<p>My tenacity comes from my belief that perseverance is essential. No matter how many setbacks I face, I always find a way to keep moving forward and pushing through challenges.</p>
+					
+					</div>
+					<div>
+						<h3>Teamwork</h3>
+						<p>Success is never achieved alone. I value collaboration, and I thrive in environments where teamwork is embraced. Working together towards a common goal makes success more fulfilling.</p>
+					
+					</div><!--<p>Some text</p>-->
+				</div>
+				<hr>
+			</section>
+			<section class="projects-container">
+				<div class="box box1">
+					<img src="gift.png" alt='gift' class="boximage">
+					
+					<p>Used my knowledge and understanding of HTML and CSS to in working with amazing developers to build a web page for a fictotou matchmaking comapny baesd in Vietnam with its services running global.</p>
+					<button >visit page</button>
+				</div>
+				<div class="box box2">
+					<img src="logoflight.jpg" alt='bright airways logo' class="boximage">
+					
+					<p>Used my frontend and backend skills to create dynamic and interactive websites using  PHP , managing databases too was applied for when building this for a fictotous aviation comapny</p>
+					<button >visit page</button>
+				</div>
+				<div class="box box3">
+					<img src="logo2.jpg" alt='bike logo' class="boximage">
+					<p>This e-commerce platform showcases bikes for both adults and children, allowing users to browse categories, view detailed product information, and make purchases. Built using <strong>HTML, CSS, JavaScript</strong> for the front-end, and <strong>PHP</strong> for server-side scripting and handling payments.</p>
+					<button>visit page</button>
+				</div>
+				<div class="box box4">
+					<img src="work-14.jpg" alt='landingpage' class="boximage">
+				</div>
+
+				<div class="box box5">
+				<img src="startingpoint.jpg" alt='ladder' class="boximage">
+					<p><strong>Personal Portfolio Website</strong></p>
+					<p>This portfolio showcases my skills and past projects, including a clean and responsive design. It features sections for About Me, Projects, and Contact information. The site was built using <strong>HTML, CSS, and JavaScript</strong> for the responsive layout and interactivity.</p>
+					<button >visit page</button>
+				</div>
+			</section>
+			
+			
+			
+			
+			
+			<section class='reviews'>
+			
+			
+			
+			</section>
+		
+		
+			<div class="contact">
+				
+				<h2>Contact Me</h2>
+				<form action="your-server-side-script.php" method="post">
+					<label for="name">Name:</label><br>
+					<input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+					
+					<label for="email">Email:</label><br>
+					<input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+					
+					<label for="message">Message:</label><br>
+					<textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea><br><br>
+					
+					<input type="submit" value="Send">
+				</form>
+			</div>
+			
+	
+			<footer>footer</footer>
+		</div>
+	
+	</body>
+
+	
+
+
+</html>
